@@ -20,7 +20,7 @@ public class Iphone implements AparelhoTelefonico, NavegadorInternet, Reprodutor
 
     @Override
     public void exibirPagina(String url) {
-        if (url == null){
+        if (url.equals("".trim())){
             System.out.println("Url inválido!");
             return;
         }
